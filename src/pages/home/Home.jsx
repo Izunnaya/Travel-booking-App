@@ -1,15 +1,16 @@
-import React from 'react'
-import Navbar from '../../components/Navbar'
+import React from "react";
+import Navbar from "../../components/Navbar";
+import Hero from "../../components/Hero";
+import PopularTours from "../../components/PopularTours";
 
 const Home = () => {
   return (
     <>
-     <header className='max-h-full w-full bg-red-500'>
-    <Navbar/>
-  </header>
-</>
- 
-  )
-}
+      <Navbar />
+      <Hero />
+      <PopularTours />
+    </>
+  );
+};
 
-export default Home
+export default Home;
