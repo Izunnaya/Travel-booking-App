@@ -2,9 +2,10 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { BsFacebook, BsLinkedin, BsTwitter, BsList } from "react-icons/bs";
+import DesktopNavLinks from "./DesktopNavLinks";
 
 function Navbar() {
-  // change color of Nav on scroll
+  //===========Change color of Nav on scroll starting point============
   const [navColor, setNavColor] = useState(false);
   const navColorControl = () => {
     if (window.scrollY >= 20) {
@@ -14,6 +15,7 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", navColorControl);
+  //==========================Change color of Nav on scroll Ending point================
 
   return (
     <div
@@ -28,37 +30,15 @@ function Navbar() {
         <BsList className="text-4xl font-bold" />
       </div>
       {/* logo */}
-      <div>
+      <div className="logo">
         <h1>
           <Link to="/">BOOKTREEPS.</Link>
         </h1>
       </div>
       {/* links */}
-
-      <ul className="hidden lg:flex gap-6">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/hotels">Hotels</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link to="/register">Register</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
-        </li>
-      </ul>
-
+      <div className="navLinks">
+        <DesktopNavLinks />
+      </div>
       {/* social-links */}
       <div className=" flex gap-2 md:gap-4 text-xl">
         <BsFacebook />
