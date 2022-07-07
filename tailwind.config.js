@@ -6,6 +6,10 @@ module.exports = {
       screens: {
         sm: "480px",
       },
+
+      colors: {
+        primaryColor: "#fc5b62",
+      },
     },
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],

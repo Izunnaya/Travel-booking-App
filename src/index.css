@@ -6,6 +6,9 @@
   h1 {
     @apply lg:text-3xl font-bold text-2xl;
   }
+  li {
+    @apply p-5 lg:p-0;
+  }
 
   .main-nav {
     @apply h-20 absolute w-full z-10 text-white md:text-white px-0 md:px-7 flex justify-between items-center;
