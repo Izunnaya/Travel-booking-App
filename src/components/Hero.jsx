@@ -10,6 +10,8 @@ const Hero = () => {
           src={BeachBanner}
           alt="beach-banner"
         />
+
+        <div className="absolute w-full h-full top-0 left-0 bg-gray-900/30"></div>
       </div>
     </>
   );

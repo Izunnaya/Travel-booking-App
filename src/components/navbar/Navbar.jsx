@@ -40,10 +40,40 @@ function Navbar() {
         <DesktopNavLinks />
       </div>
       {/* social-links */}
-      <div className=" flex gap-2 md:gap-4 text-xl">
+      <div className=" flex gap-3 md:gap-4 text-xl pr-3">
         <BsFacebook />
         <BsLinkedin />
         <BsTwitter />
+      </div>
+
+      {/* Mobile Menu Dropdown. */}
+      <div className="menuDropDown absolute left-0 top-0 bg-gray-100/90 w-10/12 md:w-6/12 lg:hidden px-4 py-7 flex flex-col">
+        <ul>
+          <h3>Beaches.</h3>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/hotels">Hotels</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <button>search</button>
+          <button>Account</button>
+        </ul>
       </div>
     </div>
   );
