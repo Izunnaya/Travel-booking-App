@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { BsFacebook, BsLinkedin, BsTwitter, BsList } from "react-icons/bs";
 import DesktopNavLinks from "./DesktopNavLinks";
+import MobileNavLinks from "./mobile-nav-menu/MobileNavLinks";
 
 function Navbar() {
   //===========Change color of Nav on scroll starting point============
@@ -15,7 +15,7 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", navColorControl);
-  //==========================Change color of Nav on scroll Ending point================
+  //================Change color of Nav on scroll Ending point================
 
   return (
     <div
@@ -47,33 +47,8 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Dropdown. */}
-      <div className="menuDropDown absolute left-0 top-0 bg-gray-100/90 w-10/12 md:w-6/12 lg:hidden px-4 py-7 flex flex-col">
-        <ul>
-          <h3>Beaches.</h3>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/hotels">Hotels</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
-          </li>
-          <button>search</button>
-          <button>Account</button>
-        </ul>
+      <div className="">
+        <MobileNavLinks />
       </div>
     </div>
   );
