@@ -10,11 +10,12 @@ w-10/12
 md:w-6/12 
 lg:hidden
 px-4
-py-7 
+py-5 
 flex 
 flex-col
 h-screen
 ease-in duration-300
+z-30
 `;
 
 export const Button = tw.button`

@@ -40,16 +40,14 @@ function Navbar() {
         <DesktopNavLinks />
       </div>
       {/* social-links */}
-      <div className=" flex gap-3 md:gap-4 text-xl pr-3">
+      <div className=" flex gap-3 md:gap-4 text-xl ">
         <BsFacebook />
         <BsLinkedin />
         <BsTwitter />
       </div>
 
       {/* Mobile Menu Dropdown. */}
-      <div className="">
-        <MobileNavLinks />
-      </div>
+      <MobileNavLinks />
     </div>
   );
 }
