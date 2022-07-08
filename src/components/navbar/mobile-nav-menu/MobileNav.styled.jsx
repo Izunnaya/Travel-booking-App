@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 
 export const MobileMenuDropDown = tw.div`
 absolute 
-left-0 
+left-[-100%]
 top-0 
 bg-gray-100/90
 w-10/12
@@ -13,7 +13,6 @@ px-4
 py-5 
 flex 
 flex-col
-h-screen
 ease-in duration-300
 z-30
 `;

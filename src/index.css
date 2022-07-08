@@ -11,7 +11,7 @@
   }
 
   .main-nav {
-    @apply h-20 absolute w-full z-10 text-white md:text-white px-0 md:px-7 flex justify-between items-center;
+    @apply h-16 fixed w-full z-10 text-white md:text-white px-2 md:px-7 flex justify-between items-center;
   }
 }
 
@@ -28,6 +28,6 @@ li {
 
 .nav-color-change {
   background-color: rgba(0, 0, 0, 0.6);
-  transition: all 300ms ease;
-  padding-top: 15px;
+  transition: all 250ms ease;
+  padding: 10px inherit;
 }
