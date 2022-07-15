@@ -34,3 +34,7 @@ li {
   transition: all 250ms ease;
   padding: 10px inherit;
 }
+input {
+  border: none;
+  outline: none;
+}

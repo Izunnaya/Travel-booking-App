@@ -11,12 +11,17 @@ import DesktopNavLinks from "./desktop-nav-menu/DesktopNavLinks";
 import { MobileMenuDropDown } from "./mobile-nav-menu/MobileNav.styled";
 import { Button } from "./mobile-nav-menu/MobileNav.styled";
 function Navbar() {
-  //==============State for handling Menu click starting point==================
+  //========== State for handling  logo disappearin on smaller devices==========
+  const [logo, setLogo] = useState(false);
+  //===========End of State for handling logo Click =============
+
+  //======State for handling Clicked Menu Display starting point============
   const [menuClick, setmenuClick] = useState(false);
   const menuHandler = () => {
     setmenuClick(!menuClick);
+    setLogo(!logo);
   };
-  //==============State for handling Menu click ending point==================
+  //==============State for handling Clicked Menu Display ending point======
 
   //===========Change color of Nav on scroll starting point============
   const [navColor, setNavColor] = useState(false);
@@ -48,7 +53,10 @@ function Navbar() {
       </div>
       {/* logo */}
       <div className="logo">
-        <h1>
+        <h1
+          onClick={menuHandler}
+          className={logo ? "hidden ease-out duration-500" : "block"}
+        >
           <Link to="/">BOOKTREEPS.</Link>
         </h1>
       </div>
