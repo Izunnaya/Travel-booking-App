@@ -17,9 +17,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute w-full h-full left-0 top-0 flex flex-col justify-center text-center text-slate-100">
-        <div>
-          <h1 className="text-4xl py-3">BOOK UNIQUE EXPERIENCES</h1>
-          <p className="text-2xl capitalize">
+        <div className="container mx-auto">
+          <h1 className="text-2xl md:text-4xl py-3">BOOK UNIQUE EXPERIENCES</h1>
+          <p className="text-xl md:text-2xl capitalize px-2 font-medium md:font-base">
             Expolore top rated tours, hotels and restaurants around the world
           </p>
         </div>
@@ -56,7 +56,7 @@ const Hero = () => {
               <BsChevronDown size={22} />
             </div>
           </div>
-          <button className=" bg-primaryColor lg:max-w-[200px] text-center rounded-r-md">
+          <button className=" bg-primaryColor lg:max-w-[200px] text-center rounded-md lg:rounded-none lg:rounded-r-md">
             Search
           </button>
         </form>
