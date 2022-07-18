@@ -30,7 +30,7 @@ li {
 }
 
 .nav-color-change {
-  background-color: rgba(37, 27, 27, 0.827);
+  background-color: #191c25;
   transition: all 250ms ease;
   padding: 10px inherit;
 }
