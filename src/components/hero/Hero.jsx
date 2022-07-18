@@ -1,8 +1,20 @@
-import React from "react";
+import { React, useState } from "react";
 import BeachBanner from "../../assets/beach-banner.jpg";
 import { BsGeoAlt, BsChevronDown, BsCalendar } from "react-icons/bs";
+import "react-date-range/dist/styles.css"; // main css file
+import "react-date-range/dist/theme/default.css"; // theme css file
+import { DateRange } from "react-date-range";
+import { format } from "date-fns";
 
 const Hero = () => {
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection",
+    },
+  ]);
+
   return (
     <>
       <div className="h-screen w-full relative">
@@ -35,15 +47,23 @@ const Hero = () => {
               <BsGeoAlt size={24} />
             </div>
           </div>
-          <div className="text-start bg-slate-200 col-auto h-14 flex justify-between px-2 text-gray-700 cursor-pointer border border-r rounded-sm border-gray-600 font-semibold">
+          <div className="relative text-start bg-slate-200 col-auto h-14 flex justify-between px-2 text-gray-700 cursor-pointer border border-r rounded-sm border-gray-600 font-semibold">
             <input
               type="text"
               placeholder="When..."
-              className="bg-transparent w-full"
+              className="bg-transparent"
             />
+
             <div className="py-4">
               <BsCalendar size={22} />
             </div>
+            <DateRange
+              editableDateInputs={true}
+              onChange={(item) => setDate([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={date}
+              className="date"
+            />
           </div>
           <div className="text-start bg-slate-200 col-auto h-14 flex justify-between px-2 text-gray-700 cursor-pointer border rounded-sm border-gray-600 font-semibold">
             <div className="py-3">

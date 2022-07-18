@@ -30,7 +30,7 @@ li {
 }
 
 .nav-color-change {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(37, 27, 27, 0.827);
   transition: all 250ms ease;
   padding: 10px inherit;
 }
@@ -38,4 +38,12 @@ input {
   border: none;
   outline: none;
   background: transparent;
+}
+.date {
+  position: absolute;
+  top: 60px;
+}
+
+.tours {
+  background: #f8f8f8;
 }
