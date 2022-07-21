@@ -39,10 +39,6 @@ input {
   outline: none;
   background: transparent;
 }
-.date {
-  position: absolute;
-  top: 60px;
-}
 
 .tours {
   background: #f8f8f8;

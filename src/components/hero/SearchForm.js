@@ -24,6 +24,7 @@ const SearchForm = () => {
   ]);
   return (
     <FormWrapper>
+      {/* City Input */}
       <FormInputStyle>
         <input
           type="text"
@@ -35,6 +36,7 @@ const SearchForm = () => {
         </div>
       </FormInputStyle>
 
+      {/* Carlendar Input */}
       <FormInputStyle className="relative items-center font-semibold">
         <div onClick={placeHolderHandler}>
           {inputPlaceholder ? (
@@ -52,18 +54,20 @@ const SearchForm = () => {
           <BsCalendar size={22} />
         </div>
 
+        {/* Display Date */}
         {openDate && (
           <DateRange
             editableDateInputs={true}
             onChange={(item) => setDate([item.selection])}
             moveRangeOnFirstSelection={false}
             ranges={date}
-            className="date"
+            className="absolute top-[60px]"
           />
         )}
       </FormInputStyle>
 
-      <FormInputStyle>
+      {/* Guest Input */}
+      <FormInputStyle className="relative">
         <div className="py-3">
           <small className="text-lg font-semibold pr-2">Guests</small>
           <span className=" bg-slate-600 px-2 rounded-full text-white">1</span>
@@ -71,8 +75,11 @@ const SearchForm = () => {
         <div className="py-4">
           <BsChevronDown size={22} />
         </div>
+
+        <div className="hidden absolute top-[60px] w-full h-[30px] bg-slate-300 bprder rounded-sm"></div>
       </FormInputStyle>
 
+      {/* Search Button */}
       <SearchButton>Search</SearchButton>
     </FormWrapper>
   );
