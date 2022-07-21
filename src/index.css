@@ -32,7 +32,7 @@ li {
 .nav-color-change {
   background-color: #191c25;
   transition: all 250ms ease;
-  padding: 10px inherit;
+  padding: 10px 30px;
 }
 input {
   border: none;
