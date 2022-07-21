@@ -4,7 +4,8 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
-import { FormInputStyle, FormWrapper, SearchButton } from "./HeroStyled";
+import { FormInputStyle, FormWrapper, SearchButton } from "../HeroStyled";
+import GuestsInput from "./GuestsInput";
 
 const SearchForm = () => {
   const [inputPlaceholder, setInputPlaceHolder] = useState(true);
@@ -76,7 +77,7 @@ const SearchForm = () => {
           <BsChevronDown size={22} />
         </div>
 
-        <div className="hidden absolute top-[60px] w-full h-[30px] bg-slate-300 bprder rounded-sm"></div>
+        <GuestsInput />
       </FormInputStyle>
 
       {/* Search Button */}

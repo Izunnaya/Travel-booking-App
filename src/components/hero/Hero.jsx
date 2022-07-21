@@ -1,6 +1,6 @@
 import { React } from "react";
 import BeachBanner from "../../assets/beach-banner.jpg";
-import HeroSearch from "./SearchForm";
+import HeroSearch from "./SearchComponent/SearchForm";
 import { HeroStyled } from "./HeroStyled";
 const Hero = () => {
   return (
