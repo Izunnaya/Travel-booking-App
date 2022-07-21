@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import BeachBanner from "../../assets/beach-banner.jpg";
 import HeroSearch from "./SearchForm";
 import { HeroStyled } from "./HeroStyled";
@@ -22,6 +22,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl capitalize px-2 font-medium md:font-base">
             Expolore top rated tours, hotels and restaurants around the world
           </p>
+          {/* Search Component */}
           <HeroSearch />
         </div>
         {/* calender div */}
