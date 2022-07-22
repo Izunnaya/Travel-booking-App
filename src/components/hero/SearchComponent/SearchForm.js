@@ -1,13 +1,36 @@
 import { React, useState } from "react";
-import { BsGeoAlt, BsChevronDown, BsCalendar } from "react-icons/bs";
+import {
+  BsGeoAlt,
+  BsChevronDown,
+  BsCalendar,
+  BsChevronUp,
+} from "react-icons/bs";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { FormInputStyle, FormWrapper, SearchButton } from "../HeroStyled";
-import GuestsInput from "./GuestsInput";
+import GuestsInputDropdown from "./GuestsInputDropdown";
 
 const SearchForm = () => {
+  // state for controlling guest input
+  const [openGuest, setOpenGuest] = useState(false);
+  const [selectGuest, setSelectGuest] = useState({
+    adults: 0,
+    children: 0,
+  });
+
+  // This "guestHandler" is passed as a prop into the "GuestInput Component" and that's where the
+  const guestHandler = (person, operator) => {
+    setSelectGuest((prev) => {
+      return {
+        ...prev,
+        [person]:
+          operator === "i" ? selectGuest[person] + 1 : selectGuest[person] - 1,
+      };
+    });
+  };
+  // State for controlling use input and placeholder check.
   const [inputPlaceholder, setInputPlaceHolder] = useState(true);
 
   const [openDate, setOpenDate] = useState(false);
@@ -16,6 +39,8 @@ const SearchForm = () => {
     setInputPlaceHolder(!inputPlaceholder);
     setOpenDate(!openDate);
   };
+
+  // State for displaying date library
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -68,16 +93,22 @@ const SearchForm = () => {
       </FormInputStyle>
 
       {/* Guest Input */}
-      <FormInputStyle className="relative">
-        <div className="py-3">
+      <FormInputStyle className="relative transition-all ease-in duration-500">
+        <div className="py-3" onClick={() => setOpenGuest(!openGuest)}>
           <small className="text-lg font-semibold pr-2">Guests</small>
-          <span className=" bg-slate-600 px-2 rounded-full text-white">1</span>
+          <span className=" bg-slate-600 px-2 rounded-full text-white">
+            {selectGuest.adults + selectGuest.children}
+          </span>
         </div>
-        <div className="py-4">
-          <BsChevronDown size={22} />
+        <div className="py-4 " onClick={() => setOpenGuest(!openGuest)}>
+          {openGuest ? <BsChevronUp size={22} /> : <BsChevronDown size={22} />}
         </div>
-
-        <GuestsInput />
+        {openGuest && (
+          <GuestsInputDropdown
+            guestHandler={guestHandler}
+            selectGuest={selectGuest}
+          />
+        )}
       </FormInputStyle>
 
       {/* Search Button */}
