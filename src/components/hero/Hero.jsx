@@ -1,7 +1,7 @@
 import { React } from "react";
 import BeachBanner from "../../assets/beach-banner.jpg";
 import HeroSearch from "./SearchComponent/SearchForm";
-import { HeroStyled } from "./HeroStyled";
+import { HeroStyled, BackgrounOverLay } from "./HeroStyled";
 const Hero = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Hero = () => {
         />
 
         {/* This is the overlay sitting on the home background */}
-        <div className="absolute w-full h-full top-0 left-0 bg-gray-900/50"></div>
+        <BackgrounOverLay />
       </div>
 
       <HeroStyled>

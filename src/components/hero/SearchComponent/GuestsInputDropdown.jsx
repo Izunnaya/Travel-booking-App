@@ -20,7 +20,6 @@ const GuestsInput = ({ guestHandler, selectGuest }) => {
           >
             <BsDashLg />
           </button>
-
           <span className="cursor-default text-xl pt-1 mx-3">
             {selectGuest.adults}
           </span>

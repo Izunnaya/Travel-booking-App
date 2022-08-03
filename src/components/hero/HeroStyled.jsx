@@ -1,5 +1,14 @@
 import tw from "tailwind-styled-components";
 
+export const BackgrounOverLay = tw.div`
+absolute 
+w-full 
+h-full 
+top-0 
+left-0
+ bg-gray-900/50
+`;
+
 export const HeroStyled = tw.div`
   absolute 
   w-full
