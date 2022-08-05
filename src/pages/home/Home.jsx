@@ -1,7 +1,7 @@
 import React from "react";
+import PopularTours from "../../components/featured/PopularHotels";
 import Hero from "../../components/hero/Hero";
 import Navbar from "../../components/navbar/Navbar";
-import PopularTours from "../../components/PopularTours";
 
 const Home = () => {
   return (
