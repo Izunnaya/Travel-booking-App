@@ -2,7 +2,7 @@ import React from "react";
 import FeaturedHotelCards from "./FeaturedHotelCards";
 
 const style = {
-  container: `max-w-[1024px] w-full mx-auto text-center`,
+  container: `max-w-[1200px] w-full mx-auto text-center`,
 };
 
 const PopularTours = () => {
