@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
 import FirstHotelRoom from "../../assets/Hotel-room-(1).jpg";
 
 const style = {
@@ -9,20 +9,29 @@ const FeaturedHotelCards = () => {
   return (
     <>
       <div className="FeautedCards max-w-[350px] w-full cursor-pointer">
-        <div className="HotelCard relative  ">
-          <div className="HotelImage mb-3">
-            <img src={FirstHotelRoom} alt="" className="object-fi rounded-md" />
+        <div className="HotelCard relative">
+          <div className="HotelImage mb-3 overflow-hidden w-full relative">
+            <img
+              src={FirstHotelRoom}
+              alt=""
+              className="object-cover rounded-md w-full transition-all ease-in-out duration-500 hover:scale-110"
+            />
+            <div className="absolute top-28 left-28">
+              <button className="">Read More</button>
+            </div>
           </div>
 
           <span className={style.numberRating}>8.9</span>
-          <div className="HotelRating bg-red-600 absolute  w-full bottom-0">
-            <div className="RatingStar flex">
-              <AiOutlineStar />
-              <AiOutlineStar />
-              <AiOutlineStar />
-              <AiOutlineStar />
+          <div className="HotelRating absolute w-full bottom-0 p-4 text-white">
+            <div className="RatingStar flex text-lg">
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
             </div>
-            <h4 className="text-start">hotel name</h4>
+            <h4 className="text-start text-2xl capitalize my-1 font-bold">
+              hotel name
+            </h4>
           </div>
         </div>
       </div>
