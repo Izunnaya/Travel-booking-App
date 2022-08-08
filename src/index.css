@@ -43,3 +43,8 @@ input {
 .tours {
   background: #f8f8f8;
 }
+/* Styles for Hotel Images */
+.HotelCard:hover .readMore {
+  display: block;
+  opacity: 1;
+}

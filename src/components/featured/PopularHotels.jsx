@@ -7,7 +7,7 @@ const style = {
 
 const PopularTours = () => {
   return (
-    <section className="my-20">
+    <section className="my-16">
       <div className={style.container}>
         <div className="Hotels-header ">
           <div className="h-[2.5px] w-36 bg-slate-300 my-3 mx-auto rounded ">
