@@ -1,8 +1,10 @@
 import React from "react";
 import FeaturedHotelCards from "./FeaturedHotelCards";
+import { Link } from "react-router-dom";
 
 const style = {
-  container: `max-w-[1200px] w-full mx-auto text-center`,
+  container: `max-w-[1200px] w-full mx-auto text-center overflow-hidden px-2`,
+  viewAllBtn: `text-start mt-3 text-xl font-bold text-red-500 hover:text-gray-800  transition-all ease-out duration-500 tracking-wide`,
 };
 
 const PopularTours = () => {
@@ -21,7 +23,14 @@ const PopularTours = () => {
             sit quos
           </p>
         </div>
-        <FeaturedHotelCards />
+        <div className="w-full text-center">
+          <FeaturedHotelCards />
+        </div>
+        <div className={style.viewAllBtn}>
+          <a>
+            <Link to="/hotels">View All (157)</Link>
+          </a>
+        </div>
       </div>
     </section>
   );

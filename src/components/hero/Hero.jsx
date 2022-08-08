@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="container mx-auto">
           <h1 className="text-2xl md:text-4xl py-3">BOOK UNIQUE EXPERIENCES</h1>
           <p className="text-xl md:text-2xl capitalize px-2 font-medium md:font-base">
-            Expolore top rated tours, hotels and restaurants around the world
+            Expolore top rated tours, hotels and restaurants around the world.
           </p>
           {/* Search Component */}
           <HeroSearch />
