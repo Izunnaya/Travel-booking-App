@@ -19,8 +19,8 @@ const PopularTours = () => {
             Popular Hotels And Accommodation
           </h3>
           <p className="text-xl text-gray-600 w-full mb-11">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            sit quos
+            Lorem, ipsum <strong>Make Sapa no limit you</strong> elit.
+            Architecto sit quos Lorem ipsum dolor
           </p>
         </div>
         <div className="w-full text-center">
