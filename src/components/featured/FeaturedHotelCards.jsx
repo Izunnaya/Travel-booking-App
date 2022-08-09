@@ -11,7 +11,7 @@ const FeaturedHotelCards = () => {
   return (
     <>
       <div className={style.FeautedCards}>
-        <HotelCards hotelData={hotelData} />
+        <HotelCards hotelData={hotelData} onClick={() => setHotelData} />
       </div>
     </>
   );

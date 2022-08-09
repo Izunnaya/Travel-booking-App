@@ -27,9 +27,9 @@ const PopularTours = () => {
           <FeaturedHotelCards />
         </div>
         <div className={style.viewAllBtn}>
-          <a>
+          <button type="button">
             <Link to="/hotels">View All (157)</Link>
-          </a>
+          </button>
         </div>
       </div>
     </section>
