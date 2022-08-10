@@ -1,5 +1,5 @@
 import { React } from "react";
-import BeachBanner from "../../assets/beach-banner.jpg";
+import BeachBanner from "../../assets/beach-banner.webp";
 import HeroSearch from "./SearchComponent/SearchForm";
 import { HeroStyled, BackgrounOverLay } from "./HeroStyled";
 const Hero = () => {

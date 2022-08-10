@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import HotelsBanner from "../../assets/hotelsDropDown.jpg";
+import HotelsBanner from "../../assets/hotel-banner.webp";
 import { BackgrounOverLay } from "../../components/hero/HeroStyled";
 
 const HotelsList = () => {

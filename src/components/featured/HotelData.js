@@ -1,7 +1,7 @@
-import roomOne from "../../assets/Hotel-room-(1).jpg";
-import roomTwo from "../../assets/roomTwo.jpg";
-import roomFour from "../../assets/roomFour.jpg";
-import roomThree from "../../assets/Hotel-room-(4).jpg";
+import roomOne from "../../assets/Hotel-room-(1).webp";
+import roomTwo from "../../assets/roomTwo.webp";
+import roomFour from "../../assets/roomFour.webp";
+import roomThree from "../../assets/Hotel-room-(4).webp";
 
 export const Hoteldata = [
   {
