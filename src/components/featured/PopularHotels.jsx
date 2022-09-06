@@ -36,6 +36,11 @@ const PopularTours = () => {
         <div className={style.PopularRestStyle}>
           <PopularRestaurants />
         </div>
+        <div className={style.viewAllBtn}>
+          <button type="button">
+            <Link to="/hotels">View All (157)</Link>
+          </button>
+        </div>
       </div>
     </section>
   );
