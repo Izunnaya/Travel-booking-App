@@ -4,6 +4,7 @@ import rest2 from "../../assets/rest2.jpg";
 import rest3 from "../../assets/rest3.jpg";
 import rest4 from "../../assets/rest4.jpg";
 import { Link } from "react-router-dom";
+import { BackgrounOverLay } from "../hero/HeroStyled";
 const style = {
   numberRating: `bg-blue-800 absolute top-0 right-5 my-6 p-2 rounded-t-lg rounded-br-lg text-md text-white font-bold cursor-pointer`,
 
@@ -55,6 +56,7 @@ const RestaurantCards = () => {
                   alt="Hotel-images"
                   className={style.HotelImage}
                 />
+                <BackgrounOverLay className="bg-gray-900/10" />
                 <div className="readMore absolute top-24 left-32 lg:left-20 opacity-0 hidden">
                   <button className={style.ReadMoreButton}>Read More</button>
                 </div>

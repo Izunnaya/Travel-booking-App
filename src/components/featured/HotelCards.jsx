@@ -1,6 +1,7 @@
 import { React, memo } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { BackgrounOverLay } from "../hero/HeroStyled";
 
 const style = {
   numberRating: `bg-blue-800 absolute top-0 right-5 my-6 p-2 rounded-t-lg rounded-br-lg text-md text-white font-bold cursor-pointer`,
@@ -27,6 +28,7 @@ const HotelCards = ({ hotelData }) => {
                   alt="Hotel-images"
                   className={style.HotelImage}
                 />
+                <BackgrounOverLay className="bg-gray-900/20" />
                 <div className="readMore absolute top-24 left-32 lg:left-20 opacity-0 hidden">
                   <button className={style.ReadMoreButton}>Read More</button>
                 </div>
