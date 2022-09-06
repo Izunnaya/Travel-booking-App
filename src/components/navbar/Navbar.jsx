@@ -79,7 +79,7 @@ function Navbar() {
       >
         <ul className="text-black py-2">
           <div className="flex justify-between">
-            <h1>BOOKTREEPS.</h1>
+            <h2>BOOKTREEPS.</h2>
             <BsXLg className="text-2xl md:text-3xl font-bold" />
           </div>
 
