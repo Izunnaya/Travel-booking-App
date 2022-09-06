@@ -13,13 +13,13 @@ const Hero = () => {
         />
 
         {/* This is the overlay sitting on the home background */}
-        <BackgrounOverLay />
+        <BackgrounOverLay className="bg-gray-900/40" />
       </div>
 
       <HeroStyled>
         <div className="container mx-auto">
-          <h1 className="text-2xl md:text-4xl py-3">BOOK UNIQUE EXPERIENCES</h1>
-          <p className="text-xl md:text-2xl capitalize px-2 font-medium md:font-base">
+          <h1 className="text-2xl md:text-3xl py-3">BOOK UNIQUE EXPERIENCES</h1>
+          <p className="text-base md:text-xl capitalize px-2 font-medium md:font-base">
             Expolore top rated tours, hotels and restaurants around the world.
           </p>
           {/* Search Component */}
