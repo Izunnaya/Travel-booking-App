@@ -1,10 +1,9 @@
-import React from "react";
+import { React, memo } from "react";
 import Navbar from "../../components/navbar/Navbar";
-import HotelsBanner from "../../assets/hotel-banner.webp";
+import HotelsBanner from "../../assets/hotel-banner.jpg";
 import { BackgrounOverLay } from "../../components/hero/HeroStyled";
 
 const HotelsList = () => {
-  console.log(Navbar);
   return (
     <>
       <div className="h-screen w-full relative">
@@ -14,7 +13,7 @@ const HotelsList = () => {
           className="w-full object-cover h-full opacity-90"
         />
       </div>
-      <BackgrounOverLay />
+      <BackgrounOverLay className=" bg-gray-900/20" />
       <div className="absolute top-0 left-0 h-screen">
         <Navbar />
       </div>
@@ -22,4 +21,4 @@ const HotelsList = () => {
   );
 };
 
-export default HotelsList;
+export default memo(HotelsList);

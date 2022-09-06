@@ -10,6 +10,7 @@ import {
 import DesktopNavLinks from "./desktop-nav-menu/DesktopNavLinks";
 import { MobileMenuDropDown } from "./mobile-nav-menu/MobileNav.styled";
 import { Button } from "./mobile-nav-menu/MobileNav.styled";
+
 function Navbar() {
   //========== State for handling  logo disappearin on smaller devices==========
   const [logo, setLogo] = useState(false);
@@ -39,7 +40,7 @@ function Navbar() {
     <div
       className={
         navColor
-          ? "bg-black-100/90 main-nav nav-color-change "
+          ? "bg-black-90/70 main-nav nav-color-change "
           : "bg-black-100/90 main-nav"
       }
     >
@@ -55,7 +56,7 @@ function Navbar() {
       <div className="logo">
         <h1
           onClick={menuHandler}
-          className={logo ? "hidden ease-out duration-500" : "block"}
+          className={logo ? "hidden md:block ease-out duration-500" : "block"}
         >
           <Link to="/">BOOKTREEPS.</Link>
         </h1>

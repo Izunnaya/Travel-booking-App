@@ -6,7 +6,7 @@ w-full
 h-full 
 top-0 
 left-0
- bg-gray-900/50
+ bg-gray-900/40
 `;
 
 export const HeroStyled = tw.div`
